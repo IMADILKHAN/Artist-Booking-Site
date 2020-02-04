@@ -103,7 +103,7 @@ def show_venue(venue_id):
     d.past_shows_count=len(past_shows)
 
   return render_template('pages/show_venue.html', venue=data[0])
-
+# -----------------------------------------------------------------
 #  Create Venue
 #  ----------------------------------------------------------------
 
