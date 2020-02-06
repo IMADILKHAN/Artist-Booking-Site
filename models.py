@@ -23,7 +23,8 @@ class Venue(db.Model):
     shows = db.relationship('Show', backref='Venue', lazy=True)
 
 
-
+# ===================================
+# Artist
 
 class Artist(db.Model):
     __tablename__ = 'Artist'
