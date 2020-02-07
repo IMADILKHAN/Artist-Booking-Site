@@ -42,7 +42,8 @@ class Artist(db.Model):
     seeking_description = db.Column(db.String)
     shows = db.relationship('Show', backref='Artist', lazy=True)
 
-
+    
+# =====================================
 
 class Show(db.Model):
   _tablename__ = 'Show'
