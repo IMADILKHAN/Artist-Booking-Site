@@ -49,7 +49,7 @@ def index():
   data = db.session.query(Artist).all()
   return render_template('pages/home.html', artists=data)
 
-
+# -----------------------------------------------------------------
 #  Venues
 #  ----------------------------------------------------------------
 
