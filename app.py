@@ -152,8 +152,8 @@ def delete_venue(venue_id):
   except :
       db.session.rollback()
   return None
-
-#  Artists
+# -----------------------------------------------------------------
+#  Artist's
 #  ----------------------------------------------------------------
 @app.route('/artists')
 def artists():
