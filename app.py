@@ -26,7 +26,7 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 #----------------------------------------------------------------------------#
-# Filters.
+
 #----------------------------------------------------------------------------#
 
 def format_datetime(value, format='medium'):
