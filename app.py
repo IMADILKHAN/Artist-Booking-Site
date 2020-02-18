@@ -61,6 +61,7 @@ def venues():
   for city in cities: venues += db.session.query(Venue).filter(Venue.city == city[0]).filter(Venue.state == city[1]).all()
   return render_template('pages/venues.html', areas=cities, venues=venues)
 
+# Search Venue
 @app.route('/venues/search', methods=['POST'])
 def search_venues():
 
@@ -75,6 +76,7 @@ def search_venues():
   }
   return render_template('pages/search_venues.html', results=response, search_term=request.form.get('search_term', ''))
 
+# Show Venue BY ID
 @app.route('/venues/<int:venue_id>')
 def show_venue(venue_id):
   data = db.session.query(Venue).filter(Venue.id == venue_id).all()
